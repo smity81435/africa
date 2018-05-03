@@ -148,8 +148,22 @@ h2{
     height: 200px;
     background: url("../img/title3.png") no-repeat center center;
 }
+#eveningbanner{
+    background: black;
+    transition: all 3s;
+    h2{
+        transition: 2s;
+    }
+}
 #evening{
-    background: yellow;
+    background: rgba(3,145,242,1);  
+}
+#devs{
+    height: 54vh;
+    width: 1280px;
+    margin-top: 55vh;
+    background: url("../img/andela.png") no-repeat center center;
+    
 }
 #night{
     background: orange;

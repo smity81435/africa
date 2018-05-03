@@ -57,14 +57,34 @@ $(window).scroll(function(){
             'opacity' : '0'
         });
     };
-    
-    if(page > 4.6 && page < 5.5){
+    if(page > 4.6 && page < 5.4){
         $('#eveningbanner div').css({
             'opacity' : '1'
         });
     }else{
         $('#eveningbanner div').css({
             'opacity' : '0'
+        });
+    };
+    if(page > 4.8 && page < 5.7){
+        $('#eveningbanner').css({
+            'background' : 'url("../img/lagos.png")'
+        });
+        $('#eveningbanner h2').css({
+            'color' : 'red'
+        });
+        $('#eveningbanner h2').css({
+            'font-size' : '6em'
+        });
+    }else{
+        $('#eveningbanner').css({
+            'background' : 'black'
+        }); 
+        $('#eveningbanner h2').css({
+            'color' : 'white'
+        });
+        $('#eveningbanner h2').css({
+            'font-size' : '3em'
         });
     };
     if(page > 6.6 && page < 7.2){
