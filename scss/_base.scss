@@ -1,6 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 body{
-height: 300vh;
-max-width: 1280px;
+    height: 700vh;
+    max-width: 1280px;
+    background: blue;
+    font-family: "Raleway",sans-serif;
+    text-align: center;
+    color: white;
+}
+h2,p{
+    margin: 0;
+}
+h2{
+    font-size: 3em;
+}
+.content{
+    opacity: 0;
+    position: relative;
+    width: 70vw;
+    margin: 0 auto;
+    top: 40%;
+    transition: 2s;
+    p{
+        font-size: 1.5em;
+    }
 }
 .elebox{
     z-index: -1;
@@ -28,6 +50,7 @@ max-width: 1280px;
     height: 200px;
     width: 75%;
     background: url("../img/title.png") no-repeat center center;
+    background-size: contain;
     position: absolute;
     top: 50px;
     left: 0;
@@ -43,24 +66,18 @@ max-width: 1280px;
     position: absolute;
     background-position: center bottom;
     margin-top: 200px;
-    
 }
-.morningbanner{
+#morningbanner{
+    z-index: 5;
+    padding: 0;
+    text-align: center;
     color: white;
     background: black;
-    
-    font-family: "Athelas", serif;
+    font-family: "Raleway", serif;
     width: 100vw;
-    text-align: center;
-    height: 100vh;
-    h2{
-        font-size: 3em;
-        margin: 0 auto;
-        position: relative;
-        padding-top: 40%;  
-    }
+    height: 100vh;  
 }
-.morning{
+#morning{
     background:url("../img/riseback.png") no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
@@ -75,7 +92,7 @@ max-width: 1280px;
     height: 200px;
     position: relative;
     top: 30vh;
-    z-index:2;
+    z-index:3;
     margin: 0 auto;
     
 }
@@ -85,5 +102,91 @@ max-width: 1280px;
     height: 80vh;
     position: relative;
     top: 30vh;
-    z-index: 3;
+    z-index: 2;
 }
+.black{
+    z-index: 5;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    margin: 0 auto;
+    transition: 2s;
+}
+.time{
+    background: red;
+    color: white;
+    margin:0 auto;
+    height: 100vh;
+    width: 100vw;
+}
+#midday{
+    background: url("../img/rain.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#hoopoe{
+    width: 30vw;
+    height: 30vh;
+    background: url("../img/hoopoe.png") no-repeat center center;
+    background-size: contain;
+    transition: 2s;
+}
+#parrot{
+    margin-top: 5vh;
+    margin-left: 70vw;
+    height: 400px;
+    width: 400px;
+    background: url("../img/parrot.png") no-repeat center center;
+    background-size: contain;;
+    transition: 1.5s;
+    
+    
+}
+#woody{
+    margin: 0 auto;
+    width: 800px;
+    height: 200px;
+    background: url("../img/title3.png") no-repeat center center;
+}
+#evening{
+    background: yellow;
+}
+#night{
+    background: orange;
+}
+.footie{
+    text-align: center;
+    background:black;
+    color: white;
+    height: 40vh;
+    width: 100vw;
+    p{
+        position: relative;
+        padding-top: 30vh;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+}
+@media only screen and (min-width: 1280px){
+    
+    .blackbar{
+        background: black;
+        height: 700vh;
+        width: 12.5vw;
+        z-index: 5;
+    }
+    #left{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+    #right{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        
+    }
+}
+
