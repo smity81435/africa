@@ -2,7 +2,7 @@
 body{
     height: 700vh;
     max-width: 1280px;
-    background: blue;
+    background: black;
     font-family: "Raleway",sans-serif;
     text-align: center;
     color: white;
@@ -149,37 +149,138 @@ h2{
     background: url("../img/title3.png") no-repeat center center;
 }
 #eveningbanner{
-    background: black;
+    background: url("../img/lagos.png")no-repeat center center;
+    background-attachment: fixed;
     transition: all 3s;
     h2{
         transition: 2s;
     }
 }
 #evening{
-    background: rgba(3,145,242,1);  
+    height: 200vh;
+    width: 100vw;
+    margin-right: 0;
+    justify-content: center;
+    background: rgba(0,0,0,1);  
 }
-#devs{
-    height: 54vh;
-    width: 1280px;
-    margin-top: 55vh;
-    background: url("../img/andela.png") no-repeat center center;
+.parallax{
+    position: absolute;
+    perspective: 1px;
+    width: 100vw;
+    height: 200vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.lists{
     
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
-#night{
-    background: orange;
+#codeblue{
+    z-index: -3;
+    background: url("../img/code1.png");
+    transform: translateZ(0px);
+
+}
+#codegreen{
+    z-index: -2;
+    transform: translateZ(-1px) scale(2);
+    background: url("../img/code2.png");
+
+}
+#codered{
+    background: url("../img/code3.png");
+    transform: translateZ(-1px) scale(2);
+}
+#blackbox{
+    background: rgba(0,0,0,1);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    transition: 1.5s;
+}
+#titlefour{
+    margin: 0 auto;
+    margin-top: 70vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 800px;
+    height: 200px;
+    background: url("../img/devs.png") no-repeat center center;
+    transform: translateZ(1px);
+}
+
+
+#devs{
+    margin: 0 auto;
+    z-index:5;
+    position: relative;
+    height: 456px;
+    width: 1280px;
+    padding-top: 100vh;
+    background: url("../img/andela.png") no-repeat center center;
+    background-size: contain;
+    margin: 0 auto;
+}
+#differ{
+    padding-top: 20vh;
 }
 .footie{
+     
     text-align: center;
     background:black;
     color: white;
-    height: 40vh;
+    height: 200px;
     width: 100vw;
     p{
         position: relative;
-        padding-top: 30vh;
+        padding-top: 150px;
         font-size: 1.2em;
         font-weight: 700;
     }
+}
+.footish{
+    position: relative;
+    margin: 0 auto;
+    z-index: 10;
+    width: 80vw;
+    padding-top: 50px;
+    ul{
+        margin: 0 auto;
+        width: 60vw;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+        li{
+            a{
+                text-decoration: none;
+                font-size: 1.5em;
+                font-weight: 700;
+            }
+            a:hover{
+                color: white;
+            }
+        }
+    }
+}
+
+a:link{
+    color: grey;
+    transition: .5s;
+}
+a:hover{
+    color: white;
+}
+a:visited{
+    color: grey;
+}
+a:active{
+    
 }
 @media only screen and (min-width: 1280px){
     

@@ -58,36 +58,78 @@ $(window).scroll(function(){
         });
     };
     if(page > 4.6 && page < 5.4){
-        $('#eveningbanner div').css({
+        $('#forty').css({
             'opacity' : '1'
         });
     }else{
-        $('#eveningbanner div').css({
+        $('#forty').css({
             'opacity' : '0'
         });
     };
-    if(page > 4.8 && page < 5.7){
+    if(page > 4.8 && page < 5.5){
         $('#eveningbanner').css({
-            'background' : 'url("../img/lagos.png")'
-        });
-        $('#eveningbanner h2').css({
-            'color' : 'red'
+            'background-attachment' : 'fixed'
         });
         $('#eveningbanner h2').css({
             'font-size' : '6em'
         });
-    }else{
-        $('#eveningbanner').css({
-            'background' : 'black'
-        }); 
-        $('#eveningbanner h2').css({
-            'color' : 'white'
+        $('#blackbox').css({
+            'background' : 'transparent'
         });
+    }else{
+        $('#blackbox').css({
+            'background' : 'black'
+        });
+
         $('#eveningbanner h2').css({
             'font-size' : '3em'
         });
     };
-    if(page > 6.6 && page < 7.2){
+    if(page > 5.9 && page < 6.93){
+        $('#devs').css({
+            'position' : 'fixed'
+        });
+        $('#devs').css({
+            'margin' : '0 auto'
+        });
+        $('#devs').css({
+            'bottom' : '0'
+        });
+        $('#devs').css({
+            'left' : '0'
+        });
+        $('#devs').css({
+            'right' : '0'
+        });
+        $('#devs').css({
+            'padding' : '0'
+        });
+        $('#titlefour').css({
+            'transform' : 'translate(0px , '+page*5+'%)'
+        });
+        
+    }else if(page > 6.93){
+        $('#devs').css({
+            'position' : 'relative'
+        }); 
+        $('#devs').css({
+            'padding' : '0'
+        });
+        $('#devs').css({
+            'padding-top' : '300vh'
+        }); 
+    }else if(page < 5.9){
+        $('#devs').css({
+            'position' : 'relative'
+        });
+        $('#devs').css({
+            'padding' : '0'
+        });
+        $('#devs').css({
+            'padding-top' : '100vh'
+        });
+    };
+    if(page > 7.3 && page < 8.3){
         $('#nightbanner div').css({
             'opacity' : '1'
         });
